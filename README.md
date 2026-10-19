@@ -16,6 +16,9 @@ The module is the radio's SoapySDR front end only. It needs the rest of the
 
 Follow the w1700k-sdr README to get the unit running and `w1700k-stream` serving first.
 
+Use a w1700k-sdr from commit `06ffa87` or later: it reports every band's tuning range. With an older
+one the module still works, but knows only the active band's range until the radio has visited the others.
+
 ## Install
 
 ```sh
